@@ -13,6 +13,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            column-gap: 50px;
             font-size: 40px;
         }
     </style>
@@ -29,16 +30,25 @@
     </div>
 
     <script>
-        var first_number = 1
-        var second_number = 5
+        var first_number = 13
+        var second_number = 3545435
         document.querySelector('.first_number').textContent = first_number
         document.querySelector('.second_number').textContent = second_number
         var i = 0
         var total_numbers = 0
         /* For loop*/
+        /*
         for(i = 0; i < second_number - first_number ; i++)
         {
             total_numbers++
+            document.querySelector('.final_result').textContent = total_numbers
+        }
+        */
+
+        /* White loop*/
+        while(i < second_number - first_number){
+            total_numbers++
+            i++
             document.querySelector('.final_result').textContent = total_numbers
         }
     </script>
